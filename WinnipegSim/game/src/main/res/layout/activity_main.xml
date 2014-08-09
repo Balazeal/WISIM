@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context="balazeal.app.winnipegsim.game.MainActivity">
+
+    <TextView android:id="@+id/textDisplay"
+        style="@style/MS_DOS"
+        android:text="WINNIPEG SIM 2014"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/sendButton"
+            style="@style/MS_DOS"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:onClick="onSubmit"
+            android:clickable="true"
+            android:text="&gt;"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/inputField"
+            style="@style/MS_DOS"
+            android:background="#00000000"
+            android:hint="_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
